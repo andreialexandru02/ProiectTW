@@ -1,0 +1,40 @@
+body{
+    /* background-image: url("https://s1.1zoom.me/b5363/808/Tropics_Forests_jungle_Trunk_tree_552618_1920x1080.jpg"); */
+    background-color: rgba(255, 253, 195, 0.90);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}   
+.CeEsteSupravietuirea{
+    margin-left: 20px;
+    margin-right: 20px;
+    display: grid; 
+    grid-template-columns:1fr 1fr;
+    grid-gap: 20px; 
+    grid-template-areas: 
+    
+    'h m'
+    'f f'
+    
+    ;
+}
+#p1:after{
+    content: url("https://p1.pxfuel.com/preview/904/291/703/lonely-wilderness-nature-settlement-faroe-islands-landscape.jpg");
+}
+.paragrafe{
+    background-color: rgba(0, 0, 0, 0.10);
+    font-size: 30px;
+    border-radius: 1.5rem;
+    text-align: center;
+    padding: 20px;}
+#p1{
+    
+    grid-area: h;
+}
+#p2{
+    grid-area: m;
+}
+#p3{
+    grid-area: f;
+    margin-bottom: auto;
+}
