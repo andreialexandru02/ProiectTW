@@ -1,0 +1,15 @@
+body{
+    background-image: url("http://wallup.net/wp-content/uploads/2016/01/36052-nature-sunset-landscape-camping.jpg");
+    background-size: 1550px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#results{
+    font-size: 3em;
+    text-align: center;
+    
+    background-color: #ffffcc;
+    background: rgba(255, 253, 195, 0.7);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 1);
+    border-radius: 1rem;
+}
