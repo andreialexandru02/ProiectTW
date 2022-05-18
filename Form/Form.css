@@ -24,6 +24,9 @@ form{
  #box{
     display: inline;
 } 
+ .regex{
+    font-size: 20px;
+} 
 #titlu{
     margin-top: 20px;
     margin-left: 400px;
