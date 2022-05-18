@@ -30,12 +30,11 @@ window.onload = () => {
             }
         }
     }
-    // setInterval(StyleButon1,2000);
-    // function StyleButon1(){
-    //     document.getElementById("generate").style.animation='AnimatieButon 1s'; // nu merge animatie decat o singura data, dar consola merge
-    //     document.getElementById("generate").style.animation-iteration-count = 'infinite';
-    //     console.log(1);
-    // }
+    setInterval(StyleButon1,2000);
+    function StyleButon1(){
+        document.getElementById("generate").style.animation='AnimatieButon 1s'; // nu merge animatie decat o singura data, dar consola merge
+        console.log(1);
+    }
     
     
     

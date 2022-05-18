@@ -3,7 +3,6 @@ window.onload = () => {
     const prenume = document.getElementById('prenume')
     const email = document.getElementById('email')
     const telefon = document.getElementById('telefon')
-    console.log(telefon.lenght);
     const form = document.getElementById('form')
     const errorElement = document.getElementById('error')
     const varsta = document.getElementById('varsta')
@@ -112,18 +111,5 @@ window.onload = () => {
         if(ok==1) e.preventDefault();
     })
 }
-    // varsta.onkeydown = function(e)  {
-    //     //Validare varsta
-    //     console.log(varsta.value);
-    //     if (varsta.value == '' ||  varsta.value == null && varsta.value > 1)
-    //     {
-    //         document.getElementById('validareVarsta').innerText = "Varsta valida";
-    //         document.getElementById('validareVarsta').style.color='#33cc33';
-    //     }
-    //     else{
-    //         document.getElementById('validareVarsta').innerText = "Varsta invalida";
-    //         document.getElementById('validareVarsta').style.color = '#ff0000'; 
-    //         ok=1; 
-    //     }
-    // }
+    
     
