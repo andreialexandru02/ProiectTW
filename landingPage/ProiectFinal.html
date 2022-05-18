@@ -6,6 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Supraviețuirea</title>
     <link rel="stylesheet" type="text/css" href="ProiectFinal.css">
+    <script src="ProiectFinal.js"></script>
+    <script>
+        var send = function() {
+          var user = document.getElementById('user').value;
+          var parola = document.getElementById('parola').value;
+
+          ajax.post({
+            url: '/login',
+            data: {
+              user:user,
+              parola:parola
+            },
+          })
+            .then(res => {
+                if(res.body.succes)
+                    getElementById("formular").style.display='block';
+            })
+            .catch(console.error);
+        }
+    </script>
 </head>
 <body>
     <h1 id="Titlu">Supraviețuirea</h1>
@@ -13,13 +33,35 @@
         <!-- <h2 id="Supravietuirea"> Ce este supraviețuirea?</h2> -->
         <!-- <img  id="Fundal" src="https://images2.alphacoders.com/107/1077147.jpg" height="200" alt=""/> -->
         <ul id="listaMenu">
-            <a href="file:///C:/Users/Asus/Documents/GitHub/ProiectTW/ceEsteSupravietuirea/Ce%20este%20supravietuirea.html" id="ListMenuContent-a"> Ce este supraviețuirea?</a>
-            <li id="ListMenuContent"> <a href="file:///C:/Users/Asus/Documents/GitHub/ProiectTW/situatiiDeSupravietuire/SituatiiDeSupravietuire.html" id="ListMenuContent-a">Situații de Supraviețuire</a> </li>
-            <li id="ListMenuContent"> <a href="file:///C:/Users/Asus/Documents/GitHub/ProiectTW/tehniciDeBaza/TehniciDeBaza.html" id="ListMenuContent-a"> Tehnici de bază</a> </li>
+            <li class="ListMenuContent"> <a href="file:///C:/Users/Asus/Documents/GitHub/ProiectTW/ceEsteSupravietuirea/Ce%20este%20supravietuirea.html" class="ListMenuContent-a"> Ce este supraviețuirea?</a> </li>
+            <li class="ListMenuContent"> <a href="file:///C:/Users/Asus/Documents/GitHub/ProiectTW/situatiiDeSupravietuire/SituatiiDeSupravietuire.html" class="ListMenuContent-a">Situații de Supraviețuire</a> </li>
+            <li class="ListMenuContent"> <a href="file:///C:/Users/Asus/Documents/GitHub/ProiectTW/tehniciDeBaza/TehniciDeBaza.html" class="ListMenuContent-a">Tehnici de bază</a> </li>
+            <li id="formular" class="ListMenuContent"> <a href="file:///C:/Users/Asus/Documents/GitHub/ProiectTW/Form/Form.html" class="ListMenuContent-a">Formular</a> </li>
+            <li><button id="login" >Accesare Formular</button></li>
         </ul>
+        
     </div>
+    <div id="modal">
+        <form >
+            <!-- action="/login" method="POST" -->
+            <div>
+                <label for="user" class="label">Username:</label>
+                <input type="text" name="user" id="user">
+            </div>
+            <div>
+                <label for="parola" class="label">Parola:</label>
+                <input type="password" name="parola" id="parola" >
+            </div>
+            <button id="butonLogin"  onclick="send()" >Login</button>
+        </form>
+    </div>
+    
      <p id="citat">Fii pregătit pentru ce-i mai rău  și speră că nu se va întâmpla!</p> 
     <meta name="viewport" 
       content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=0">
+        
+    
+      
+    
 </body>
 </html>

@@ -22,10 +22,11 @@ body{
     text-align: center;
     color: black; 
 }
-#ListMenuContent{
-    display: inline-block;
+.ListMenuContent{
+    display: inline-block;  
 }
-#ListMenuContent-a{
+.ListMenuContent-a{
+    border: solid black 2px;
     text-decoration: none; 
     color: black;
     padding: 0 10px;
@@ -33,9 +34,12 @@ body{
     position: relative;
     background-color: rgba(255, 253, 195, 0.90);
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0);
-    border-radius: .20rem;
+    border-radius: .50rem;
 }
-#ListMenuContent-a::after{
+ #formular{
+    display: none;
+} 
+.ListMenuContent-a::after{
     content: '';
     width: 0;
     height: 15px;
@@ -47,7 +51,7 @@ body{
     border-radius: .20rem;
     transition: 0.75s;
 }
-#ListMenuContent-a:hover::after{
+.ListMenuContent-a:hover::after{
     width: 100%;
 }
 #listaMenu{
@@ -62,11 +66,57 @@ body{
 #citat{
     font-size: 3.5em;
     text-align: center;
-    margin-top: 18vh;
+    margin-top: 10vh;
     background-color: #ffffcc;
     background: rgba(255, 253, 195, 0.90);
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 100);
     border-radius: 1rem;
     animation-name: Opacitate;
     animation-duration: 4s;
+}
+#modal{
+    text-align: center;
+    display: none;
+    margin-left: 700px;
+    margin-right: 700px ;
+    font-size: 3.5em;
+    text-align: center;
+    margin-top: 18vh;
+    background-color: #ffffcc;
+    background: rgba(255, 253, 195, 0.90);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 100);
+    border-radius: 1rem;
+}
+button{
+    margin-top: 20px;
+    text-decoration: none; 
+    color: black;
+    padding: 0 10px;
+    font-size: 3.5vh;
+    position: relative;
+    background-color: rgba(255, 253, 195, 0.90);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0);
+    border-radius: .5rem;
+}
+
+form{
+    margin: auto;
+    margin-top: 10xp;
+    /* background: rgba(255, 253, 195, 0.90); */
+    background-color: transparent;
+    /* box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 1); */
+    border-radius: 1rem;
+    width: fit-content;
+}
+.label{
+    background: rgba(255, 253, 195, 0.5);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 1);
+    border-radius: 0.5rem;
+}
+input{
+    height: 40px;
+    /* background-color: #ffffcc; */
+    background: rgba(255, 253, 195, 0.90);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 1);
+    border-radius: 0.5rem;
 }
