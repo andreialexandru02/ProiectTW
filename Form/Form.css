@@ -1,0 +1,52 @@
+
+body{
+    background-image: url("https://wallpaperaccess.com/full/3760763.jpg");
+    background-size: 1550px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+form{
+    font-size: 3em;
+    text-align: center;
+    
+    background-color: #ffffcc;
+    background: rgba(255, 253, 195, 0.90);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 1);
+    border-radius: 1rem;
+}
+ #box{
+    display: inline;
+} 
+#titlu{
+    margin-top: 20px;
+    margin-left: 400px;
+    margin-right: 400px;
+    text-align: center;
+    font-size:  5vw;
+    background-color: rgba(255, 253, 195, 0.90);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 1);
+    border-radius: 1rem;
+}
+#descriere{
+
+    font-size: 2em;
+    text-align: center;
+    margin-left: 250px;
+    margin-right: 250px;
+    background-color: #ffffcc;
+    background: rgba(255, 253, 195, 0.90);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 1);
+    border-radius: 1rem;
+}
+button{
+    margin: auto;
+    text-align: center;
+    justify-content: right;
+    text-decoration: none;
+    color: black; 
+    padding: 0 10px;
+    font-size: 2vh;
+    background-color: rgba(255, 253, 195, 1);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 1);
+    border-radius: .50rem;
+}

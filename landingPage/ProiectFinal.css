@@ -4,9 +4,13 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
+#box{
+    text-align: center;
+}
 #Titlu{
     text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
     font-size:  7.4vw;
     margin-bottom: 40px;
     background-color: rgba(255, 253, 195, 0.90);
@@ -53,6 +57,10 @@ body{
     list-style: none;
     text-align: center;
 }
+@keyframes Opacitate {
+    from {opacity: 0;}
+    to {opacity: 100;}
+  }
 #citat{
     font-size: 3.5em;
     text-align: center;
@@ -61,4 +69,6 @@ body{
     background: rgba(255, 253, 195, 0.90);
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 100);
     border-radius: 1rem;
+    animation-name: Opacitate;
+    animation-duration: 4s;
 }
