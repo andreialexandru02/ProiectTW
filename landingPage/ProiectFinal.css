@@ -21,11 +21,14 @@ body{
     position: relative;
     text-align: center;
     color: black; 
+    margin: auto; 
 }
 .ListMenuContent{
-    display: inline-block;  
+    display: inline-block; 
+    
 }
 .ListMenuContent-a{
+    margin: auto;
     border: solid black 2px;
     text-decoration: none; 
     color: black;
@@ -36,9 +39,9 @@ body{
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0);
     border-radius: .50rem;
 }
- #formular{
+ /* #formular{
     display: none;
-} 
+}  */
 .ListMenuContent-a::after{
     content: '';
     width: 0;
@@ -101,7 +104,7 @@ button{
 
 form{
     margin: auto;
-    margin-top: 10xp;
+    margin-top: 2vh;
     /* background: rgba(255, 253, 195, 0.90); */
     background-color: transparent;
     /* box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 1); */

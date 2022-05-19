@@ -1,25 +1,34 @@
 body{
     /* background-image: url("https://s1.1zoom.me/b5363/808/Tropics_Forests_jungle_Trunk_tree_552618_1920x1080.jpg"); */
     background-color: rgba(255, 253, 195, 0.90);
-    height: 90vh;
+    height: 93vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }   
+h1{
+    background-color: rgba(0, 0, 0, 0.20);
+    font-size: 50px;
+    border-radius: 1.5rem;
+    text-align: center;
+    padding: 10px;
+    
+}
 .CeEsteSupravietuirea{
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
     display: grid; 
     grid-template-columns:1fr 1fr;
-    grid-gap: 20px; 
+    grid-gap: 2vw; 
     grid-template-areas: 
     
     'h m'
     'f f'
     ;
 }
-#p1:after{
+ /* #p1:after{
     content: url("https://p1.pxfuel.com/preview/904/291/703/lonely-wilderness-nature-settlement-faroe-islands-landscape.jpg");
-}
+    width: 100px;
+}  */
 .paragrafe{
     background-color: rgba(0, 0, 0, 0.10);
     font-size: 30px;
@@ -36,4 +45,28 @@ body{
 #p3{
     grid-area: f;
     margin-bottom: auto;
+}
+@media screen and (max-width: 1000px){
+    .CeEsteSupravietuirea{
+        display: grid; 
+        grid-template-columns:1fr ;
+        grid-gap: 1vw; 
+        grid-template-areas: 
+        
+        'h'
+        'm'
+        'f'
+        ;
+    }
+    #p1{
+    
+        grid-area: h;
+    }
+    #p2{
+        grid-area: m;
+    }
+    #p3{
+        grid-area: f;
+        margin-bottom: auto;
+    }
 }

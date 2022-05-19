@@ -1,5 +1,5 @@
 window.onload = () => {
-    setInterval(Photo,5000);
+    setInterval(Photo,10000);
     arr=[
         "url('https://images.wallpapersden.com/image/download/tent-camping-landscape_Zmlsam6UmZqaraWkpJRnamtlrWZpaWU.jpg')",
         "url('http://trumpwallpapers.com/wp-content/uploads/Camping-Wallpaper-01-1920x1080-1.jpg')",
