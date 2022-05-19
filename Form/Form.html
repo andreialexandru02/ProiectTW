@@ -17,27 +17,27 @@
     <form id="form" action="results.html" method="GET">
         <div>
             <label for="Nume">Nume:</label>
-            <input type="text" name='Nume' id="nume">
+            <input type="text" name='Nume' id="nume" required>
             <span class='regex' id="validareNume"></span>
         </div>
         <div>
             <label for="Prenume">Prenume:</label>
-            <input type="text" name="Prenume" id="prenume" >
+            <input type="text" name="Prenume" id="prenume" required>
             <span  class='regex' id="validarePrenume"></span>
         </div>
         <div>
             <label for="E-mail">E-mail:</label>
-            <input type="e-mail" name="E-mail" id="email">
+            <input type="e-mail" name="E-mail" id="email" required>
             <span class='regex' id="validareEmail"></span>
         </div>
         <div>
             <label for="Telefon">Numar de Telefon:</label>
-            <input type="tel" name="Telefon" id="telefon">
+            <input type="tel" name="Telefon" id="telefon" required>
             <span class='regex' id="validareTelefon"></span>
         </div>
         <div>
             <label for="Varsta">Varsta:</label>
-            <input type="number" name="Varsta" id="varsta" min="18" max="99">
+            <input type="number" name="Varsta" id="varsta" min="18" max="99" required>
             <span class='regex' id="validareVarsta"></span>
         </div>
         <button id="submit">Submit</button>

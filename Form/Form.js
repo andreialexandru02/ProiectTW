@@ -108,7 +108,10 @@ window.onload = () => {
         
     }
     form.addEventListener('submit', (e) => {
-        if(ok==1) e.preventDefault();
+        if(ok==1) 
+        {e.preventDefault(); 
+            alert("Modificați raspunsurile")
+        }
     })
 }
     
